@@ -88,6 +88,10 @@ docker compose config
 
 配套文档：[API](docs/API.md) · [架构](docs/ARCHITECTURE.md) · [测试](docs/TESTING.md) · [安全政策](SECURITY.md) · [贡献指南](CONTRIBUTING.md)
 
+## 第三方访问决策
+
+新增第三方系统与数据访问前的企业治理门禁，将尽职调查、制裁筛查、数据协议、安全评估、重大问题、补偿控制、最小权限和访问有效期汇总为可审计决策。详见[企业第三方访问决策说明](docs/ENTERPRISE_ACCESS_DECISION.md)。
+
 ## 使用与商业授权
 
 本工程仅允许个人非商业性的学习、研究和技术交流，**不得商用**。商用、SaaS、企业部署、二次销售、软件实施和深度定制须事先取得上海如静知华信息科技有限公司书面授权。
