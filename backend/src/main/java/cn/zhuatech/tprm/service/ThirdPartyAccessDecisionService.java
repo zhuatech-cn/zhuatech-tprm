@@ -5,8 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Service;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class ThirdPartyAccessDecisionService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Result assess(Request request) {
         var blockers = new ArrayList<String>();
         var actions = new ArrayList<String>();
@@ -27,12 +33,21 @@ public class ThirdPartyAccessDecisionService {
         return new Result(decision, List.copyOf(blockers), List.copyOf(actions));
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public enum Decision { GRANT, REMEDIATE, BLOCKED }
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(String thirdPartyId, boolean dueDiligenceComplete, boolean sanctionsClear,
                           boolean dataProcessingAgreement, boolean securityAssessmentPassed,
                           boolean criticalFindingsOpen, boolean businessOwnerApproved,
                           boolean leastPrivilegeDefined, boolean accessExpirySet,
                           boolean compensatingControlsApproved, boolean riskAccepted,
                           boolean auditReady) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Result(Decision decision, List<String> blockers, List<String> actions) {}
 }
